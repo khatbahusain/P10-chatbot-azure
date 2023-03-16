@@ -40,6 +40,14 @@ jobs:
             . 
             !venv/
 
+  test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Run tests
+      run: |
+        pytest
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
