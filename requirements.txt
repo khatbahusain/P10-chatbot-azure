@@ -13,4 +13,3 @@ pytest
 aiohttp
 python-dotenv
 botbuilder-integration-aiohttp>=4.14.0
-pytest

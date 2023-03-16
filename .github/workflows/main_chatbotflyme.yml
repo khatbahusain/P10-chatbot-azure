@@ -46,6 +46,7 @@ jobs:
     steps:
     - name: Run tests
       run: |
+        pip install pytest
         python -m pytest
 
   deploy:
