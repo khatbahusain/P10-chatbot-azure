@@ -16,21 +16,21 @@ class BookingDetails:
         self.end_date: str = end_date
         self.budget: str = budget
 
+class TestAPI(unittest.TestCase):
+    def test_origin_city(self):
+        # Ensure the origin city is set correctly
+        booking = BookingDetails(or_city='Rennes')
+        assert booking.or_city == "Rennes"
 
-def test_origin_city():
-    # Ensure the origin city is set correctly
-    booking = BookingDetails(or_city='Rennes')
-    assert booking.or_city == "Rennes"
+    def test_destination_city(self):
+        # Ensure the destination city is set correctly
+        booking = BookingDetails(dst_city='Paris')
+        assert booking.dst_city == "Paris"
 
-def test_destination_city():
-    # Ensure the destination city is set correctly
-    booking = BookingDetails(dst_city='Paris')
-    assert booking.dst_city == "Paris"
-
-def test_budget():
-    # Ensure the budget is set correctly
-    booking = BookingDetails(budget=800)
-    assert booking.budget == 800
+    def test_budget(self):
+        # Ensure the budget is set correctly
+        booking = BookingDetails(budget=800)
+        assert booking.budget == 800
     
     
     
