@@ -1,4 +1,4 @@
-class BookingInfos:
+class BookingDetails:
     def __init__(
         self,
         or_city: str = None,
