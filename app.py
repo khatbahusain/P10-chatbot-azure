@@ -82,14 +82,6 @@ async def messages(req: Request) -> Response:
         return json_response(data=response.body, status=response.status)
     return Response(status=HTTPStatus.OK)
 
-# Pour aiohttp deployment: www.youtube.com/watch?v=eLMYd4LGAu8
-# https://docs.microsoft.com/fr-fr/azure/app-service/configure-language-python#customize-startup-command
-# On Azure Portal: App Service >> Web App Configuration >> General Settings
-# Update <Startup Command> with:
-# python3.8 -m aiohttp.web -H 0.0.0.0 -P 8000 app:init_func
-# Note : app(.py) is the name of the app
-
-    
 
 app = web.Application(middlewares=[aiohttp_error_middleware])
 app.router.add_post("/api/messages", messages)
