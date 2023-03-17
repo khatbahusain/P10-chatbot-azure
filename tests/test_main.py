@@ -16,7 +16,7 @@ class BookingDetails:
         self.end_date: str = end_date
         self.budget: str = budget
 
-class TestAPI(unittest.TestCase):
+class TestBot(unittest.TestCase):
     def test_origin_city(self):
         # Ensure the origin city is set correctly
         booking = BookingDetails(or_city='Rennes')
