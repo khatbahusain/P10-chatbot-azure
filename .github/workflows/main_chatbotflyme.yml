@@ -45,6 +45,7 @@ jobs:
     needs: build
     steps:
     - name: Run tests
+      working-directory: ./tests
       run: |
         pip install pytest
         pytest
