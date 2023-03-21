@@ -7,10 +7,10 @@ import os
 
 class DefaultConfig:
     """Configuration for the bot."""
-
-    PORT = 8000
-    APP_ID = os.environ.get("MicrosoftAppId", "d7766af3-19db-40a0-8b90-3b2ec4bccd95")
-    APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "IJB8Q~Ucym16pPtIZV5-5G00FF~tfZBjqVqBwa-a")
+    
+    
+    APP_ID = os.environ.get("MicrosoftAppId", "")
+    APP_PASSWORD = os.environ.get("MicrosoftAppPassword", "")
     LUIS_APP_ID = os.environ.get("LuisAppId", "672fbb9a-188f-4eda-a279-970645ebe47f")
     LUIS_API_KEY = os.environ.get("LuisAPIKey", "702fc50696ab44d9a2bd7afd5b0214ae")
     LUIS_API_HOST_NAME = os.environ.get("LuisAPIHostName", "flymeoc-authoring.cognitiveservices.azure.com")
