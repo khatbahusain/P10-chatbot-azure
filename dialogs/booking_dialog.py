@@ -165,3 +165,5 @@ class BookingDialog(CancelAndHelpDialog):
         """Ensure time is correct."""
         timex_property = Timex(timex)
         return "definite" not in timex_property.types
+
+##

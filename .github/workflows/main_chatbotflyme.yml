@@ -39,7 +39,7 @@ jobs:
           path: |
             . 
             !venv/
-
+  
   test:
     runs-on: ubuntu-latest
     needs: build
@@ -69,4 +69,5 @@ jobs:
         with:
           app-name: 'chatbotflyme'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_69E18C7020DB40A2A18384FD01381BBA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F0FDE03F22A14BDD803706A637FD6B2B }}
+
